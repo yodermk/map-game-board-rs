@@ -20,5 +20,5 @@ Free Software Foundation.
 
 Copyright to code is retained by each contributor, who agrees to license
 it as noted above.  It is intended
-the relicensing not be possible.  We hope this will be the basis for many
+that relicensing not be possible.  We hope this will be the basis for many
 Free games in the future.

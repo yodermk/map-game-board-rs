@@ -1,0 +1,195 @@
+---
+territories:
+  - name: AK
+    fullName: Alaska
+    canAttack: [WA]
+  - name: WA
+    fullName: Washington
+    canAttack: [AK,OR,ID]
+  - name: OR
+    fullName: Oregon
+    canAttack: [WA,CA]
+  - name: CA
+    fullName: California
+    canAttack: [HI,OR,AZ]
+  - name: HI
+    fullName: Hawaii
+    canAttack: [CA]
+  - name: ID
+    fullName: Idaho
+    canAttack: [WA,MT,WY,UT]
+  - name: MT
+    fullName: Montana
+    canAttack: [ID,WY,ND]
+  - name: WY
+    fullName: Wyoming
+    canAttack: [MT,ID,CO,SD]
+  - name: CO
+    fullName: Colorado
+    canAttack: [WY,UT,UT,NM,KS]
+  - name: AZ
+    fullName: Arizona
+    canAttack: [CA,UT,NM]
+  - name: NV
+    fullName: Nevada
+    canAttack: [AZ,UT,UT]
+  - name: UT
+    fullName: Utah
+    canAttack: [ID,NV,AZ,CO]
+  - name: NM
+    fullName: New Mexico
+    canAttack: [AZ,CO,TX]
+  - name: TX
+    fullName: Texas
+    canAttack: [NM,OK,LA]
+  - name: OK
+    fullName: Oklahoma
+    canAttack: [TX,KS,AR]
+  - name: KS
+    fullName: Kansas
+    canAttack: [OK,CO,NE,MO]
+  - name: NE
+    fullName: Nebraska
+    canAttack: [KS,WY,SD,IA]
+  - name: SD
+    fullName: South Dakota
+    canAttack: [NE,ND,WY,MN]
+  - name: ND
+    fullName: North Dakota
+    canAttack: [SD,MT]
+  - name: MN
+    fullName: Minnesota
+    canAttack: [SD,IA,WI]
+  - name: MO
+    fullName: Misouri
+    canAttack: [KS,IA,AR,IL]
+  - name: AR
+    fullName: Arkansas
+    canAttack: [MO,OK,LA,TN]
+  - name: LA
+    fullName: Louisiana
+    canAttack: [AR,TX,MS]
+  - name: MS
+    fullName: Mississippi
+    canAttack: [LA,AL,TN]
+  - name: AL
+    fullName: Alabama
+    canAttack: [MS,FL,GA]
+  - name: TN
+    fullName: Tennessee
+    canAttack: [MS,AR,KY,NC]
+  - name: KY
+    fullName: Kentucky
+    canAttack: [TN,AR,IN,OH,WV,VA]
+  - name: IL
+    fullName: Illinois
+    canAttack: [IN,MO,IA,WI]
+  - name: IA
+    fullName: Iowa
+    canAttack: [IL,MN,MO,NE]
+  - name: WI
+    fullName: Wisconsin
+    canAttack: [IL,MN,MI]
+  - name: IN
+    fullName: Indiana
+    canAttack: [KY,IL,MI,OH]
+  - name: MI
+    fullName: Michigan
+    canAttack: [IN,WI,OH]
+  - name: OH
+    fullName: Ohio
+    canAttack: [IN,KY,WV,PA]
+  - name: PA
+    fullName: Pennsylvania
+    canAttack: [OH,NY,WV,MD,DE,NJ]
+  - name: NY
+    fullName: New York
+    canAttack: [PA,NJ,VT,MA,CT]
+  - name: VT
+    fullName: Vermont
+    canAttack: [NY,NH]
+  - name: NH
+    fullName: New Hampshire
+    canAttack: [VT,MA,ME]
+  - name: ME
+    fullName: Maine
+    canAttack: [NH]
+  - name: MA
+    fullName: Massachussets
+    canAttack: [NY,NH,RI,CT]
+  - name: CT
+    fullName: Connecticut
+    canAttack: [RI,NY,MA]
+  - name: RI
+    fullName: Rhode Island
+    canAttack: [CT,MA]
+  - name: NJ
+    fullName: New Jersey
+    canAttack: [NY,PA]
+  - name: DE
+    fullName: Delaware
+    canAttack: [PA,MD]
+  - name: MD
+    fullName: Maryland
+    canAttack: [DE,PA,WV,VA,DC]
+  - name: WV
+    fullName: West Virginia
+    canAttack: [OH,KY,PA,MD,VA]
+  - name: DC
+    fullName: District of Columbia
+    canAttack: [MD,VA]
+  - name: VA
+    fullName: Virginia
+    canAttack: [MD,DC,WV,KY,NC]
+  - name: NC
+    fullName: North Carolina
+    canAttack: [VA,SC,TN]
+  - name: SC
+    fullName: South Carolina
+    canAttack: [NC,GA]
+  - name: GA
+    fullName: Georgia
+    canAttack: [AL,SC,FL]
+  - name: FL
+    fullName: Florida
+    canAttack: [GA,AL,PR]
+  - name: PR
+    fullName: Puerto Rico
+    canAttack: [FL]
+regions:
+  - name: Pacific
+    fullName: Pacific States
+    territories: [WA,OR,CA,HI,AK]
+    bonusForAll: 2
+  - name: Mountains
+    fullName: Mountains & Plains
+    territories: [ID,MT,ND,SD,NE,WY]
+    bonusForAll: 5
+  - name: Southwest
+    fullName: Inner Southwest
+    territories: [NV,AZ,UT,CO,NM]
+    bonusForAll: 3
+  - name: Cattle Country
+    fullName: Cattle Country
+    territories: [TX,OK,KS]
+    bonusForAll: 3
+  - name: Midwest
+    fullName: Midwest
+    territories: [MN,WI,MI,IA,IL,IN,OH,KY,MO]
+    bonusForAll: 4
+  - name: Northeast
+    fullName: Northeast
+    territories: [PA,WV,VA,MD,DC,NY,DE,NJ]
+    bonusForAll: 6
+  - name: New England
+    fullName: New England
+    territories: [MA,CT,RI,ME,NH,VT]
+    bonusForAll: 2
+  - name: The South
+    fullName: The South
+    territories: [NC,TN,LA,AR,AL,MS,GA,SC]
+    bonusForAll: 4
+  - name: Sun Country
+    fullName: Sun Country
+    territories: [FL,PR]
+    bonusForAll: 2
